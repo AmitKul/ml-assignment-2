@@ -180,6 +180,8 @@ st.markdown("""
 
 # Header
 st.markdown('<h1 class="main-header">🤖 Machine Learning Classification Models</h1>', unsafe_allow_html=True)
+st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">Amit Kulshrestha</p>', unsafe_allow_html=True)
+st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">BITS ID:- 2025aa05088@wilp.bits-pilani.ac.in</p>', unsafe_allow_html=True)
 st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">M.Tech (AIML) - Assignment 2 | Multi-Model Classification Comparison</p>', unsafe_allow_html=True)
 
 # Installation instructions if xgboost is missing
