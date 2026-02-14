@@ -855,13 +855,3 @@ st.markdown("""
     <p style="color: #1E88E5;">📧 For queries: neha.vinayak@pilani.bits-pilani.ac.in</p>
 </div>
 """, unsafe_allow_html=True)
-
-# Sidebar - BITS Virtual Lab Verification
-with st.sidebar:
-    st.markdown("---")
-    st.markdown("### 🧪 BITS Virtual Lab")
-    
-    if st.button("📸 Virtual Lab Screenshot"):
-        st.image("https://via.placeholder.com/400x200/1E88E5/FFFFFF?text=BITS+Virtual+Lab+Execution", 
-                caption="Assignment executed on BITS Virtual Lab - Verified")
-        st.success("✅ Assignment performed on BITS Virtual Lab - 1 Mark")
