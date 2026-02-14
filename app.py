@@ -19,7 +19,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 warnings.filterwarnings('ignore')
 
-# ============= FIX FOR VERSION COMPATIBILITY =============
 # Add missing monotonic_cst attribute to DecisionTreeClassifier
 # This allows loading models trained with older scikit-learn versions
 
@@ -32,7 +31,6 @@ if not hasattr(DecisionTreeClassifier, 'monotonic_cst'):
     
     # Also patch the _support_missing_values method if needed
     def patched_support_missing_values(self, X):
-        """Patched method to handle missing values without monotonic_cst"""
         try:
             # Try the original method first
             from sklearn.tree._classes import _check_missing_values
@@ -90,7 +88,6 @@ def load_model_with_compatibility(model_path):
             st.error(f"❌ Failed to load {os.path.basename(model_path)}: {str(e)}")
             return None
 
-# ============= END OF FIX =============
 
 # Check if xgboost is installed
 xgboost_available = importlib.util.find_spec("xgboost") is not None
