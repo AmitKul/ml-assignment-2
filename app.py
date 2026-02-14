@@ -422,10 +422,6 @@ with st.sidebar:
         st.markdown("#### Upload Test Data")
         st.markdown("*Upload test data (CSV format)*")
     
-    # Sample data option
-    st.markdown("#### Or use sample data")
-    use_sample_data = st.checkbox("Use sample heart disease data for testing")
-    
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv", key="uploader")
     
     # Model selection
