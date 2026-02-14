@@ -447,11 +447,6 @@ with st.sidebar:
         model_options
     )
     
-    # Advanced options
-    st.markdown("### ⚙️ Advanced Options")
-    show_feature_importance = st.checkbox("Show Feature Importance", value=True)
-    show_cv_scores = st.checkbox("Show Cross-Validation Scores", value=True)
-    
     # About section
     st.markdown("---")
     st.markdown("### ℹ️ About")
