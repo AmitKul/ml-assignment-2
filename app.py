@@ -857,7 +857,6 @@ st.markdown("""
 <div class="footer">
     <p>M.Tech (AIML) - Machine Learning Assignment 2 | BITS Virtual Lab | Submission Deadline: 15-Feb-2026</p>
     <p>Implemented Models: Logistic Regression | Decision Tree | K-NN | Naive Bayes | Random Forest | XGBoost</p>
-    <p style="color: #1E88E5;">📧 For queries: neha.vinayak@pilani.bits-pilani.ac.in</p>
 </div>
 """, unsafe_allow_html=True)
 
